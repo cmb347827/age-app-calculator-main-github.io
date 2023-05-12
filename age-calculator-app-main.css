@@ -12952,15 +12952,15 @@ main {
       line-height: 1.3em; }
       @media screen and (min-width: 1440px) {
         main .container div.height span {
-          max-height: 2.2em;
-          line-height: 2.2em; } }
+          max-height: 2.4em;
+          line-height: 2.4em; } }
     main .container .big {
       font-size: 1.3em;
       font-weight: 800;
       padding: 10px 0 0 0; }
       @media screen and (min-width: 1440px) {
         main .container .big {
-          font-size: 2.2em;
+          font-size: 2.4em;
           padding: 0; } }
     main .container #years:after,
     main .container #months:after,
@@ -12997,8 +12997,8 @@ main {
           left: 90%; } }
     @media screen and (min-width: 1440px) {
       main .container {
-        min-height: 450px;
-        width: 700px;
+        min-height: 420px;
+        width: 710px;
         padding: 50px;
         border-radius: 15px 15px 100px 15px; } }
 
