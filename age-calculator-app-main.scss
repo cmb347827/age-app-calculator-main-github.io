@@ -145,7 +145,7 @@ main {
       top: 25px;
       width: 100%;
       @media screen and(min-width: $container__form-xxl * 1px) {
-        top: 30px;
+        top: -30px;
       }
     }
     
@@ -167,13 +167,14 @@ main {
         @media screen and(min-width: $container__form-xxl * 1px) {
           position: relative;
           left: 90%;
+		  top: 30px;
         }
     }
     
 	
     @media screen and (min-width: $container__form-xxl * 1px) {
-	  min-height: 225px;
-      width: 750px;
+	  max-height: 250px;
+      width: 780px;
       @include padding(40px);
       @include border-radius(15px 15px 238px 15px);
     }

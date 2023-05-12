@@ -12976,7 +12976,7 @@ main {
       width: 100%; }
       @media screen and (min-width: 1440px) {
         main .container .line {
-          top: 30px; } }
+          top: -30px; } }
     main .container .purple {
       width: 75px;
       height: 75px;
@@ -12993,11 +12993,12 @@ main {
       @media screen and (min-width: 1440px) {
         main .container .purple {
           position: relative;
-          left: 90%; } }
+          left: 90%;
+          top: 30px; } }
     @media screen and (min-width: 1440px) {
       main .container {
-        min-height: 225px;
-        width: 750px;
+        max-height: 250px;
+        width: 780px;
         padding: 40px;
         border-radius: 15px 15px 238px 15px; } }
 
