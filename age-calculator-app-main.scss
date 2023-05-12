@@ -100,8 +100,8 @@ main {
 	  
       &:focus,&:hover {
 	     border: 2px solid hsl(259,100%,65%);
-		-webkit-transition: 0.5s;
-        transition: 0.5s;
+		-webkit-transition: 0.7s;
+        transition: 0.7s;
 		outline:none;
       }
 	  
@@ -117,18 +117,17 @@ main {
       line-height: 1.3em;
       @media screen and(min-width: $container__form-xxl * 1px) {
         span {
-          max-height: 1.8em;
-          line-height: 1.8em;
+          max-height: 1.3em;
+          line-height: 1.3em;
         }
       }
     }
     .big {
       font-size: 1.3em;
 	  font-weight: 800;
-	  @include padding(10px 0 0 0);
+	  @include padding(0);
       @media screen and(min-width: $container__form-xxl * 1px) {
         font-size: 2.6em;
-		@include padding(0);
       }
     }
 
@@ -173,10 +172,10 @@ main {
     
 	
     @media screen and (min-width: $container__form-xxl * 1px) {
-	  min-height: 380px;
+	  min-height: 225px;
       width: 750px;
-      @include padding(50px);
-      @include border-radius(15px 15px 100px 15px);
+      @include padding(40px);
+      @include border-radius(15px 15px 238px 15px);
     }
   }
 }
