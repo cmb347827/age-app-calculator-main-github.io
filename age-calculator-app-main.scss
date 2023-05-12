@@ -117,17 +117,17 @@ main {
       line-height: 1.3em;
       @media screen and(min-width: $container__form-xxl * 1px) {
         span {
-          max-height: 1.8em;
-          line-height: 1.8em;
+          max-height: 2em;
+          line-height: 2em;
         }
       }
     }
     .big {
       font-size: 1.3em;
-	  font-weight: @font_weight-bold;
+	  font-weight: @font_weight-extrabold;
 	  @include padding(10px 0 0 0);
       @media screen and(min-width: $container__form-xxl * 1px) {
-        font-size: 1.8em;
+        font-size: 2em;
 		@include padding(0);
       }
     }
