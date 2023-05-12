@@ -10,7 +10,7 @@ Error: Invalid CSS after "	  font-weight: ": expected expression (e.g. 1px, bold
 127: 	  font-weight: @font_weight-extrabold;
 128: 	  @include padding(10px 0 0 0);
 129:       @media screen and(min-width: $container__form-xxl * 1px) {
-130:         font-size: 2em;
+130:         font-size: 2.5em;
 131: 		@include padding(0);
 132:       }
 
@@ -63,4 +63,4 @@ C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"	  font-weight: \": expected expression (e.g. 1px, bold), was \"@font_weight-ex...\"\A         on line 127 of age-calculator-app-main.scss\A \A 122:         }\A 123:       }\A 124:     }\A 125:     .big {\A 126:       font-size: 1.3em;\A 127: 	  font-weight: @font_weight-extrabold;\A 128: 	  @include padding(10px 0 0 0);\A 129:       @media screen and(min-width: $container__form-xxl * 1px) {\A 130:         font-size: 2em;\A 131: 		@include padding(0);\A 132:       }"; }
+  content: "Error: Invalid CSS after \"	  font-weight: \": expected expression (e.g. 1px, bold), was \"@font_weight-ex...\"\A         on line 127 of age-calculator-app-main.scss\A \A 122:         }\A 123:       }\A 124:     }\A 125:     .big {\A 126:       font-size: 1.3em;\A 127: 	  font-weight: @font_weight-extrabold;\A 128: 	  @include padding(10px 0 0 0);\A 129:       @media screen and(min-width: $container__form-xxl * 1px) {\A 130:         font-size: 2.5em;\A 131: 		@include padding(0);\A 132:       }"; }
