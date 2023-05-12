@@ -123,10 +123,11 @@ main {
       }
     }
     .big {
-      font-size: 1em;
+      font-size: 1.2em;
+	  font-weight: @font_weight-bold;
 	  @include padding(10px 0 0 0);
       @media screen and(min-width: $container__form-xxl * 1px) {
-        font-size: 1.4em;
+        font-size: 1.6em;
 		@include padding(0);
       }
     }
