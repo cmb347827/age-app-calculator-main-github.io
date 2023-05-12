@@ -126,7 +126,7 @@ main {
       font-size: 1em;
 	  @include padding(10px 0 0 0);
       @media screen and(min-width: $container__form-xxl * 1px) {
-        font-size: 1.1em;
+        font-size: 1.4em;
 		@include padding(0);
       }
     }
