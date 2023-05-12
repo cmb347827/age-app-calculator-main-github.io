@@ -12931,7 +12931,8 @@ main {
     background-color: white;
     border-radius: 15px 15px 60px 15px; }
     main .container .parent-font {
-      font-size: 32px; }
+      font-size: 32px;
+      font-weight: 800; }
     main .container input[type=number] {
       border: 1px solid #141414;
       font-weight: 700;
