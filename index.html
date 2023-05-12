@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/yxgKFKLM/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-utilities.min.css" integrity="sha512-DEGBrwaCF4lkKzMKNwt8Qe/V54bmJctk7I1HyfINGAIugDvsdBeuWzAWZmXAmm49P6EBfl/OeUM01U3r7cW4jg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel='stylesheet' href='age-calculator-app-main.css' type='text/css'>
+  <title>Frontend Mentor | Age calculator app</title>
+
+  
+</head>
+<body>
+     <main>
+	     <div class='container'>
+		     <h1 class='d-none'>Age calculator app</h1>
+		     <div class='row'>
+			    <form id='form' class='mt-5 d-flex flex-column col-12' action='#' method='post'>
+				  <div class='d-flex'>
+				     <div class='col-4 col-xxl-4 me-1 me-xxl-2 d-flex flex-column'>
+                       <label aria-label='enter your birthdate' class='text-uppercase fw-normal' for='day'>Day</label>
+                       <input min="1" max="31" id='day' type='number' name='day' placeholder='DD' required>
+                       <span class="fs-6 small" id='error-day'></span>
+				     </div>
+				     <div class='col-4 col-xxl-4 me-1 me-xxl-2 d-flex flex-column'>
+                       <label aria-label='enter your birthmonth' class='text-uppercase fw-normal' for='month'>Month</label>
+                       <input min="1" max="12" id='month' type='number' name='month' placeholder='MM' required>
+					   <span class="fs-6 small" id='error-month'></span>
+				     </div>
+				     <div class='col-4 col-xxl-4 me-1 me-xxl-2 d-flex flex-column'>
+                       <label aria-label='enter your birthyear' class='text-uppercase fw-normal' for='year'>Year</label>
+                       <input min="1900" max="2023" id='year' type='number' name='year' placeholder='YYYY' required>
+					   <span class="fs-6 small" id='error-year'></span>
+				     </div>
+				  </div>
+				  <div class='d-flex'>
+			          <button aria-label='click to calculate your age'  id='get-age' type='button' class='purple btn'><img aria-hidden='true' class='col' src='images/icon-arrow.svg' alt='click to calculate your age in years,months and days' width="46" height="44"></button>
+			      </div>
+				</form>
+             </div>
+			 
+			 <hr class='line'>
+			 <div class='row'>
+			     <div class='parent-font col height pt-3 mt-5 mt-xxl-1'>
+                   <div class='pt-5 d-flex'>
+				      <span class='big' id='years'></span><span title='age in years' id='number-years'></span><span class='big'>years</span>
+				   </div>
+				   <div class='pt-5 d-flex'>
+                      <span class='big' id='months'></span><span title='age number of months' id='number-months'></span><span class='big'>months</span>
+				   </div>
+				   <div class='pt-5 d-flex'>
+                      <span class='big' id='days'></span><span title='age number of days' id='number-days'></span><span class='big'>days</span>
+				   </div>
+				 </div>
+			 </div>
+		 </div>
+      </main>
+      <footer>
+	       <div class="attribution mt-5">
+                <span class='me-2'>Challenge by</span><a class='me-2' href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 
+                <span class='me-2'>Coded by</span><a href="https://www.frontendmentor.io/profile/cmb347827">CMB</a>
+           </div>
+	  </footer>
+	  
+	  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous"></script>
+      <script src='age-calculator-app-main.js'></script>
+	  <!-- html validated at https://validator.nu/#textarea on 5-10-2023 -->
+</body>
+</html>

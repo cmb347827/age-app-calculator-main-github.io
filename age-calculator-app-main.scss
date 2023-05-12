@@ -1,0 +1,187 @@
+//beautified at https://codebeautify.org/scss-beautifier
+
+@import "custom.scss";
+
+$container__form-xs: 375;
+$container__form-xxl: 1440;
+
+$container__form-xxl-min: 1439;
+$font_size-32: 32px;
+$font_size-12: 12px;
+$font_size-8: 8px;
+
+$font_weight-normal: 400;
+$font_weight-bold: 700;
+$font_weight-extrabold: 800;
+
+$colors: (
+  Purple: hsl(259, 100%, 65%),
+  Light red: hsl(0, 100%, 67%),
+  White: hsl(0, 0%, 100%),
+  Off white: hsl(0, 0%, 94%),
+  Light grey: hsl(0, 0%, 86%),
+  Smokey grey: hsl(0, 1%, 44%),
+  Off black: hsl(0, 0%, 8%),
+);
+$fallback-colors: (
+  DarkOrchid IndianRed White Snow GainsBoro Grey DarkSlateGray
+);
+
+@mixin font-color($color, $fallback-color) {
+  color: $fallback-color;
+  color: $color;
+}
+
+@mixin bg-color($color, $fallback-color) {
+  background-color: $fallback-color;
+  background-color: $color;
+}
+
+@mixin width($grid-size) {
+  width: $grid-size * 1px;
+}
+@mixin max-width($grid-size) {
+  max-width: $grid-size * 1px;
+}
+@mixin min-width($grid-size) {
+  min-width: $grid-size * 1px;
+}
+@mixin border-radius($radius...) {
+  border-radius: $radius;
+}
+@mixin margin($args...) {
+  margin: $args;
+}
+@mixin padding($args...) {
+  padding: $args;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  @include bg-color(map-get($colors, Light grey), nth($fallback-colors, 5));
+  &:not(.attribution) {
+    font:$font_weight-normal $font_size-12 'poppins', sans-serif;
+  }
+  
+  @media screen and (min-width: $container__form-xxl * 1px) {
+  }
+}
+
+main {
+  overflow: auto;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  @include margin(100px auto);
+  @include bg-color(map-get($colors, Light grey), nth($fallback-colors, 5));
+  
+  
+  .container {
+    @include width($container__form-xs);
+    min-height: 600px;
+    @include bg-color(map-get($colors, White), nth($fallback-colors, 3));
+    @include border-radius(15px 15px 60px 15px);
+	.parent-font{
+	   font-size: $font_size-32;
+	}
+    input[type=number] {
+      border: 1px solid hsl(0, 0%, 8%);
+      font-weight: $font_weight-bold;
+	  font-size: $font_size-32;
+	  
+      &:focus,&:hover {
+	     border: 2px solid hsl(259,100%,65%);
+		-webkit-transition: 0.5s;
+        transition: 0.5s;
+		outline:none;
+      }
+	  
+    }
+    span.small {
+      height: 1em;
+      @media screen and(min-width: $container__form-xxl * 1px) {
+        min-height: 1.8em;
+      }
+    }
+    div.height {
+      max-height: 1.2em;
+      line-height: 1.2em;
+      @media screen and(min-width: $container__form-xxl * 1px) {
+        span {
+          max-height: 1.7em;
+          line-height: 1.7em;
+        }
+      }
+    }
+    .big {
+      font-size: 1.2em;
+      @media screen and(min-width: $container__form-xxl * 1px) {
+        font-size: 1.7em;
+      }
+    }
+
+    #years:after,
+    #months:after,
+    #days:after {
+      /* the two dashes before years, months and days */
+      content: "--";
+      @include font-color(map-get($colors, Purple), nth($fallback-colors, 1));
+      font-weight: extra-bold;
+      font-size: 2em;
+    }
+    .line {
+      position: relative;
+      top: 25px;
+      width: 100%;
+      @media screen and(min-width: $container__form-xxl * 1px) {
+        top: 30px;
+      }
+    }
+    
+    .purple {
+        width: 75px;
+        height: 75px;
+        position:relative;
+		top: 75px;
+		left: 38%;
+        z-index: 999;
+        @include bg-color(map-get($colors, Purple), nth($fallback-colors, 1));
+        @include border-radius(50%);
+        &:hover {
+          @include bg-color(
+            map-get($colors, Off black),
+            nth($fallback-colors, 7)
+          );
+        }
+        @media screen and(min-width: $container__form-xxl * 1px) {
+          position: relative;
+          left: 90%;
+        }
+    }
+    
+	
+    @media screen and (min-width: $container__form-xxl * 1px) {
+      width: 600px;
+      @include padding(50px);
+      @include border-radius(15px 15px 90px 15px);
+    }
+  }
+}
+
+footer {
+  .attribution {
+    font-size: $font_size-8;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
