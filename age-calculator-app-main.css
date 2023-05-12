@@ -12955,11 +12955,12 @@ main {
           max-height: 1.3em;
           line-height: 1.3em; } }
     main .container .big {
-      font-size: 1.2em;
-      font-weight: 800; }
+      font-size: 1em;
+      padding: 10px 0 0 0; }
       @media screen and (min-width: 1440px) {
         main .container .big {
-          font-size: 1.3em; } }
+          font-size: 1.1em;
+          padding: 0; } }
     main .container #years:after,
     main .container #months:after,
     main .container #days:after {
@@ -12995,7 +12996,7 @@ main {
           left: 90%; } }
     @media screen and (min-width: 1440px) {
       main .container {
-        max-height: 450px;
+        max-height: 600px;
         width: 700px;
         padding: 50px;
         border-radius: 15px 15px 100px 15px; } }
