@@ -124,7 +124,7 @@ main {
     }
     .big {
       font-size: 1.3em;
-	  font-weight: @font_weight-extrabold;
+	  font-weight: $font_weight-extrabold;
 	  @include padding(10px 0 0 0);
       @media screen and(min-width: $container__form-xxl * 1px) {
         font-size: 2.5em;
