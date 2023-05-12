@@ -12996,7 +12996,7 @@ main {
           left: 90%; } }
     @media screen and (min-width: 1440px) {
       main .container {
-        min-height: 600px;
+        min-height: 500px;
         width: 700px;
         padding: 50px;
         border-radius: 15px 15px 100px 15px; } }
